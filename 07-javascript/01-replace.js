@@ -1,10 +1,11 @@
 const replaceItems = (input) => {
   // return a string with 'gold' replaced by 'SHINY' and 'wander' replaced by 'roam', regardless of the case of the letters
-
+  swap_one =  input.replaceAll(/[Gg][Oo][Ll][Dd]/,"SHINY");
+  swap_two =  swap_one.replaceAll(/[Ww][Aa][Nn][Dd][Ee][Rr]/,"roam");
   // for reference, see the MDN "Regular Expressions" entry:
   // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 
-  return input;
+  return swap_two;
 };
 
 console.log(replaceItems('All that is gold does not glitter'));

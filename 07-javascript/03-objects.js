@@ -1,7 +1,7 @@
 let result = {};
-
 const insertItem = (key, value) => {
   // insertItem the property with key and value into result
+  
   return key;
 };
 
