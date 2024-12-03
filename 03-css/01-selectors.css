@@ -10,12 +10,29 @@
 
 /* Use attribute selectors for the first part of the exercise */
 
-li[class] {
-  color: var(--red);
+li[id="cat"] {
+  color: var(--teal);
+}
+li[class*="og"] {
+  color: var(--magenta);
 }
 
+li[class*="donkey"] {
+  color: var(--royalblue);
+}
+li[class*="cat"] {
+  color: var(--royalblue);
+}
 /* Use descendant, child, and sibling selectors for the second part */
 
 section li {
   color: var(--green);
+}
+
+div[class="list-food"] > ol >li:nth-child(even) {
+  color: var(--magenta);
+}
+
+div[class="list-food"] > ol >li:nth-child(3) {
+  color: var(--royalblue);
 }

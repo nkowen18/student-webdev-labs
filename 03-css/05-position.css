@@ -8,19 +8,31 @@
   padding: 10px;
   color: var(--white);
 }
-
+.absolute {
+  background-color: var(--maroon);
+  position: absolute;
+  height: 70px;
+  width: 100%;
+  top: 0px;
+}
 .static {
   background-color: var(--darkviolet);
+  position: static;
+  height: 400px;
+  width: 300px;
 }
 
 .relative {
   background-color: var(--purple);
+  position: relative;
+  height: 400px;
+  width: 300px;
+  top: 50px;
 }
 
-.absolute {
-  background-color: var(--maroon);
-}
+
 
 .fixed {
   background-color: var(--darkgolden);
+  position: fixed;
 }

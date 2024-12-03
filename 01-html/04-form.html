@@ -9,7 +9,37 @@
   <body>
     <main>
       <form action="/submit">
-        <!-- Add your code here -->
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name"/>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email"/>
+        </div>
+         <fieldset>
+          <legend>Favorite Character:</legend>
+          <input type="radio" id="spongebob" name="character" value="Spongebob"/>
+          <label for="spongebob">Spongebob</label>
+          <br />
+          <input type="radio" id="sandy" name="character" value="Sandy"/>
+          <label for="sandy">Sandy</label>
+          <br />
+          <input type="radio" id="patrick" name="character" value="Patrick"/>
+          <label for="patrick">Patrick</label>
+        </fieldset>
+        <fieldset>
+          <legend>Are you a fan of the show?</legend>
+          <input type="checkbox" id="alleps" name="fancheck" value="Yes all the episodes"/>
+          <label for="alleps">Yes, I have watched all the episodes!</label>
+          <br />
+          <input type="checkbox" id="bestmemes" name="fancheck" value="Yes, it has the best memes"/>
+          <label for="bestmemes">Yes, it has the best memes</label>
+        </fieldset>
+        <div>
+          <input type="submit" value="Submit" id = "submitButton"/>
+          <input type="reset" value="Reset" id = "resetbutton"/>
+        </div>
       </form>
     </main>
   </body>
