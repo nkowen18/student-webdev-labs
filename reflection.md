@@ -21,3 +21,9 @@ I was able to mostly complete these. Some minor differences between the images, 
 I love grid so much more than flex. It makes sense, its neat and orderly. I was able to finish the exercises the easiest of any of them so far. 
 
 ### Bootstrap
+
+Bootstrap had a lot in common with grid, in that it was a very neat and organized way to lay out a page. Once I figured out the system, I did not have any difficulty finishing the bootstrap exercises.
+
+### Javascript
+
+Most of the javascript exercises I was able to complete without consulting the solutions, but the DOM one, and parts of the API fetch one, I did. 

@@ -1,7 +1,15 @@
 const destructureItems = (input) => {
   // destructure the name and parents of the character and format the output as shown
+  let final_string_1 = '';
+  let final_string_2 = '  daughter of';
+  let final_string_3 = '  ';
+  final_string_1 = final_string_1.concat(input['first'], ' ', input['last']);
+  let mother = input['allegiance'].parents.mother;
+  let father = input['allegiance'].parents.father;
+  final_string_3 = final_string_3.concat(mother, ' and ', father);
+  final_string_1 = final_string_1.concat(final_string_1, '\n', final_string_2, '\n', final_string_3);
 
-  return input;
+  return final_string_1;
 };
 
 const sansa = {

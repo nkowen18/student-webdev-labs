@@ -1,11 +1,13 @@
 const formatItems = (input) => {
   // return a string of the concatenated numbers, separated by commas and with three digits after the decimal point
   let final_num = '';
-  for (num in input){
-    x = num.toPrecision(3);
-    final_num.concat(x,', ');
+  i =0;
+  while (i < input.length) {
+    x = Number(input[i]).toFixed(3);
+    final_num = final_num.concat(x, ', ');
+    i++;
   }
-  let len = final_num.length - 1;
+  let len = final_num.length - 2;
   let s1 = final_num.substring(0,len);
   // for reference, see the MDN Number page:
   // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number

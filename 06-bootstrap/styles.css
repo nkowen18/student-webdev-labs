@@ -21,3 +21,14 @@ form > * {
 .box {
   height: 160px;
 }
+.card {
+  width: 22rem;
+}
+
+.card-header, .card-subtitle {
+  font-size: 1em;
+  font-weight: bold;
+}
+.card-img-top {
+  margin-bottom: 10px;
+}

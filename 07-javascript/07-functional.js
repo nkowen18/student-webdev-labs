@@ -22,20 +22,65 @@ const characters = [
 const mapNameFamily = (characters) => {
   // Return an array with the name and house of each character
   // Format: "Arya, of House Stark"
-
-  return characters;
+  let array = [];
+  let i = 0;
+  while (i < characters.length) {
+    let wip = characters[i].name;
+    wip = wip.concat(', of House ', characters[i].house);
+    array.push(wip);
+    i++;
+  }
+  return array;
 };
 
 const filterFamily = (characters, house) => {
   // Return an array with only the characters from a given house
-
-  return characters;
+  let array = [];
+  let i = 0;
+  while (i < characters.length) {
+    let c_house = characters[i].house;
+    if(c_house == house){
+      array.push(characters[i]);
+    }
+    i++;
+  }
+  return array;
 };
 
 const reduceHouses = (characters) => {
   // Return an object with the number of characters from each house
+  let Stark = 0;
+  let Lannister = 0;
+  let Targaryen = 0;
+  let Greyjoy = 0;
+  let Seaworth = 0;
+  let Tarth = 0;
+  let i = 0;
 
-  return characters;
+  while (i < characters.length) {
+    let c_house = characters[i].house;
+    if(c_house == 'Stark'){
+      Stark++;
+    }
+    else if(c_house == 'Lannister'){
+      Lannister++;
+    }
+    else if(c_house == 'Targaryen'){
+      Targaryen++;
+    }
+    else if(c_house == 'Greyjoy'){
+      Greyjoy++;
+    }
+    else if(c_house == 'Seaworth'){
+      Seaworth++;
+    }
+    else if(c_house == 'Tarth'){
+      Tarth++;
+    }
+    i++;
+  }
+  houses = [{Stark: Stark, Lannister: Lannister, Targaryen: Targaryen, Greyjoy: Greyjoy, Seaworth: Seaworth, Tarth: Tarth,}]
+  return houses;
 };
 
 console.log(mapNameFamily(characters));
